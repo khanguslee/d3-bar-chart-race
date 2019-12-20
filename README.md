@@ -1,2 +1,3 @@
-# d3-bar-chart-race
+# d3 Bar Chart race
+
 Bar chart race implemented with d3!
