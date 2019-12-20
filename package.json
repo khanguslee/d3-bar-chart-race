@@ -1,0 +1,8 @@
+{
+  "name": "d3-bar-chart-race",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:khanguslee/d3-bar-chart-race.git",
+  "author": "khanguslee <khanguslee@gmail.com>",
+  "license": "MIT"
+}
