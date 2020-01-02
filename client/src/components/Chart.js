@@ -21,10 +21,13 @@ export default class Chart extends React.Component {
   }
 
   render() {
+    const { data } = this.state;
+    const chartData = data ? data[0][1] : [];
+    const chartSliderMax = data ? data.length - 1 : 1;
     return (
       <div className="box">
-        <BarChart />
-        <ChartSlider />
+        <BarChart data={chartData} />
+        <ChartSlider min={0} max={chartSliderMax} />
       </div>
     );
   }
