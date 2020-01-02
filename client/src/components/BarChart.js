@@ -54,6 +54,10 @@ export default class BarChart extends React.Component {
 
     const yAxis = d3.axisLeft(y);
 
+    // Remove all SVG elements
+    d3.selectAll('g').remove();
+
+    // Create Chart
     const chart = d3
       .select(this.barChart.current)
       .append('g')

@@ -11,6 +11,7 @@ export default class Chart extends React.Component {
 
     this.state = {
       data: null,
+      time: 0,
     };
   }
   componentDidMount() {
@@ -20,14 +21,22 @@ export default class Chart extends React.Component {
     });
   }
 
+  chartSliderHandler = event => {
+    this.setState({ time: event.target.value });
+  };
+
   render() {
-    const { data } = this.state;
-    const chartData = data ? data[0][1] : [];
+    const { data, time } = this.state;
+    const chartData = data ? data[time][1] : [];
     const chartSliderMax = data ? data.length - 1 : 1;
     return (
       <div className="box">
         <BarChart data={chartData} />
-        <ChartSlider min={0} max={chartSliderMax} />
+        <ChartSlider
+          min={0}
+          max={chartSliderMax}
+          onChangeHandler={this.chartSliderHandler}
+        />
       </div>
     );
   }
