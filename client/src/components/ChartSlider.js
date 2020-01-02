@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import "bulma-slider/dist/css/bulma-slider.min.css";
-import bulmaSlider from "bulma-slider/dist/js/bulma-slider.min.js";
+import 'bulma-slider/dist/css/bulma-slider.min.css';
+import bulmaSlider from 'bulma-slider/dist/js/bulma-slider.min.js';
 
 // TODO: Props to set min, max and starting value
 export default function ChartSlider() {

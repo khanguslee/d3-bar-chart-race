@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Chart from "./components/Chart";
+import Chart from './components/Chart';
 
-import "bulma/css/bulma.css";
-import "./App.css";
+import 'bulma/css/bulma.css';
+import './App.css';
 
 function App() {
   return (
