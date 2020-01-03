@@ -21,8 +21,8 @@ export default class Chart extends React.Component {
     });
   }
 
-  chartSliderHandler = event => {
-    this.setState({ time: event.target.value });
+  chartSliderHandler = timeValue => {
+    this.setState({ time: timeValue });
   };
 
   render() {

@@ -1,0 +1,11 @@
+.font-awesome-container {
+  margin-right: 1em;
+}
+
+.fa-pause:hover {
+  color: hsl(171, 100%, 41%);
+}
+
+.fa-play:hover {
+  color: hsl(171, 100%, 41%);
+}
